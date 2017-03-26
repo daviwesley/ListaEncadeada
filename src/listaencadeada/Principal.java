@@ -30,6 +30,8 @@ public class Principal {
         System.out.println(l);
         l.InserirPos(3, 40);
         System.out.println(l);
+        l.removerPos(4);
+        System.out.println(l);
          
     }
     
