@@ -59,9 +59,11 @@ public class ListaEncadeada {
             int count = 1;
             
             while(count != pos -1){
-                n = n.prox.prox;
-                tam--;
+                n = n.prox;
+                count++;
             }
+            n.prox = n.prox.prox;
+            tam--;
         }
     }
     
