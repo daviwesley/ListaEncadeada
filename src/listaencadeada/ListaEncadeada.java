@@ -33,6 +33,20 @@ public class ListaEncadeada {
             tam++;
         }
     }
+    
+    public void adicionaFinal(Integer data){
+        No n = new No(data);
+        if(tam == 0){
+            inicio.prox = n;
+            ultimo = n;
+            tam++;
+        }else{
+            ultimo.prox = n;
+            ultimo = n;
+            tam++;
+        }
+    }
+    
     public int getTam(){
         return tam;
     }
