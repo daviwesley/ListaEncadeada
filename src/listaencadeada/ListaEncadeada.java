@@ -47,6 +47,11 @@ public class ListaEncadeada {
         }
     }
     
+    public void removerInicio(){
+        inicio.prox = inicio.prox.prox;
+        tam--;
+    }
+    
     public int getTam(){
         return tam;
     }
