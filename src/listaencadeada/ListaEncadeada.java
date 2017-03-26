@@ -54,6 +54,23 @@ public class ListaEncadeada {
         }
     }
     
+    public void removerFinal(){
+        if(tam == 1){
+            inicio.prox = null;
+            ultimo = inicio;
+        }else if(tam != 0){
+            No n = inicio.prox;
+            int count = 1;
+            while(count != tam - 1){
+                n = n.prox;
+                cout++;                
+            }
+            ultimo = n;
+            ultimo.prox = null;
+            tam--;
+        }
+    }
+    
     public int getTam(){
         return tam;
     }
