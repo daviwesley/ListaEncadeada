@@ -13,12 +13,13 @@ public class Principal {
     
     public static void main(String [] args){
         ListaEncadeada l = new ListaEncadeada();
-        l.adicionar(1);
-        l.adicionar(2);
-        l.adicionar(3);
-        l.adicionar(4);
+        l.adicionarInicio(1);
+        l.adicionarInicio(2);
+        l.adicionarInicio(3);
+        l.adicionarInicio(4);
+        l.adicionarInicio(5);
         
-        System.out.println(l);
+        System.out.println(l.getTam());
     }
     
 }
