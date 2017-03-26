@@ -48,8 +48,10 @@ public class ListaEncadeada {
     }
     
     public void removerInicio(){
+        if(tam != 0){
         inicio.prox = inicio.prox.prox;
         tam--;
+        }
     }
     
     public int getTam(){
