@@ -18,8 +18,9 @@ public class Principal {
         l.adicionarInicio(3);
         l.adicionarInicio(4);
         l.adicionarInicio(5);
+        l.adicionaFinal(6);
         
-        System.out.println(l.getTam());
+        System.out.println(l);
     }
     
 }
