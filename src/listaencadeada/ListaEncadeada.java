@@ -20,6 +20,31 @@ public class ListaEncadeada {
         
     }
     
+    public void InserirPos(int pos, Integer data){
+        if(pos <=0 || pos > tam)
+            return;
+        else if(pos == 1){
+            adicionarInicio(data);            
+        }
+        else if(pos == tam){
+            adicionaFinal(data);
+        }
+        else{
+        No n = new No(data);
+        No x = inicio.prox;
+        int count = 1;
+        
+        while(count != pos - 1){
+            x = x.prox;
+            count++;
+        }
+        No temp = x.prox;
+        x.prox = n;
+        n.prox = temp;
+        tam++;
+    }
+    }
+    
     public void adicionarInicio(Integer data){
         No n = new No(data);
         if(tam == 0){
@@ -63,7 +88,7 @@ public class ListaEncadeada {
             int count = 1;
             while(count != tam - 1){
                 n = n.prox;
-                cout++;                
+                count++;                
             }
             ultimo = n;
             ultimo.prox = null;
