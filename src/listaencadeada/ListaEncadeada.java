@@ -123,7 +123,7 @@ public class ListaEncadeada {
     }
     public String toString(){
         No n = inicio.prox;
-        String temp = "";
+        String temp = " ";
         
         while(n !=null){
             temp = temp + n.data;
