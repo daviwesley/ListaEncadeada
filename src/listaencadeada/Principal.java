@@ -22,9 +22,15 @@ public class Principal {
                
         System.out.println(l);
         
-         l.removerInicio();
+        l.removerInicio();
          
-         System.out.println(l);
+        System.out.println(l);
+        
+        l.removerFinal();
+        System.out.println(l);
+        l.InserirPos(3, 40);
+        System.out.println(l);
+         
     }
     
 }
