@@ -19,8 +19,12 @@ public class Principal {
         l.adicionarInicio(4);
         l.adicionarInicio(5);
         l.adicionaFinal(6);
-        
+               
         System.out.println(l);
+        
+         l.removerInicio();
+         
+         System.out.println(l);
     }
     
 }
