@@ -20,7 +20,7 @@ public class ListaEncadeada {
         
     }
     
-    public void adicionar(Integer data){
+    public void adicionarInicio(Integer data){
         No n = new No(data);
         if(tam == 0){
             inicio.prox = n;
@@ -30,6 +30,7 @@ public class ListaEncadeada {
             No temp = inicio.prox;
             inicio.prox = n;
             n.prox = temp;
+            tam++;
         }
     }
     public int getTam(){
