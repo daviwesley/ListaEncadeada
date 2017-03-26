@@ -45,6 +45,26 @@ public class ListaEncadeada {
     }
     }
     
+    public void removerPos(int pos){
+        if(pos <=0 || pos > tam)
+            return;
+        else if(pos == 1){
+            removerInicio();            
+        }
+        else if(pos == tam){
+            removerFinal();
+        }   
+        else{
+            No n = inicio.prox;
+            int count = 1;
+            
+            while(count != pos -1){
+                n = n.prox.prox;
+                tam--;
+            }
+        }
+    }
+    
     public void adicionarInicio(Integer data){
         No n = new No(data);
         if(tam == 0){
