@@ -10,7 +10,7 @@ package listaencadeada;
  * @author davi
  */
 public class No {
-    public Integer data;
+    public Integer data;//tipo de informaçao
     public No prox;
     
     public No(Integer data){
